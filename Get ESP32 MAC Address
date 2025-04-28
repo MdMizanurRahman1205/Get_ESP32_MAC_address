@@ -1,0 +1,14 @@
+#include <WiFi.h>  // Include WiFi library
+
+void setup() {
+  Serial.begin(115200);  // Start Serial Monitor
+  delay(1000);           // Short delay
+
+  // Get and print the MAC address
+  String macAddress = WiFi.macAddress();
+  Serial.println("MAC Address: " + macAddress);
+}
+
+void loop() {
+  // Nothing needed here
+}
